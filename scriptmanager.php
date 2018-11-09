@@ -15,7 +15,7 @@ class ScriptManager
 
         # Detect the format
         $format = 'text';
-        if ( strpos('<html', $message) ) $format = 'html';
+        if ($message && strpos('<html', $message)) $format = 'html';
         
         # Build vacation scripts
         $execBlock =
