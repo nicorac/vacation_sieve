@@ -3,3 +3,6 @@ CHANGELOG
 2012-04-08 André Rodier <andre.rodier@gmail.com>
 	* Initial Version
 
+2018-11-09 Claudio Nicora
+  * Fixed RoundCube 1.3 compatibility issues.
+    GIT: https://github.com/nicorac/vacation_sieve
