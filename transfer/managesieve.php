@@ -25,8 +25,8 @@ class ManagesieveTransfer extends SieveTransfer
 
         // try to connect to managesieve server
         $this->managesieve = new rcube_sieve(
-            method_exists($this->app, get_user_name) ? $this->app->get_user_name() : $_SESSION['username'],
-            method_exists($this->app, get_user_password) ? $this->app->get_user_password() : $this->app->decrypt($_SESSION['password']),
+            method_exists($this->app, 'get_user_name') ? $this->app->get_user_name() : $_SESSION['username'],
+            method_exists($this->app, 'get_user_password') ? $this->app->get_user_password() : $this->app->decrypt($_SESSION['password']),
             $this->params['host'],
             $this->params['port'],
             null,
